@@ -9,3 +9,4 @@ Route::get('/user', function (Request $request) {
 })->middleware('auth:sanctum');
 
 Route::get('/nearest-golfers', [GolferController::class, 'nearestGet']);
+Route::get('/nearest-golfers/csv', [GolferController::class, 'nearestCsv']);
